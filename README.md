@@ -9,5 +9,5 @@ Proyecto para aprender animaciones con css y usar Scripts para paginas webs.
 # TO DO
   - [ ] Usar logos e imagenes
   - [ ] Crear alguna forma de intección
-  - [] Añadir mas animaciones
+  - [ ] Añadir mas animaciones
   - [x] Crear estructura básica de la Pagina
