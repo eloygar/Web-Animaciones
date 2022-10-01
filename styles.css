@@ -1,0 +1,77 @@
+.header {
+    background-color: black;
+    color: red;
+    text-align: center;
+    grid-area: hd;
+
+}
+
+.main {
+
+    background-color: black;
+    color: red;
+    text-align: center;
+    grid-area: main;
+}
+
+
+
+.boton {
+    text-align: center;
+    padding: auto;
+    width: 600px;
+    background: red;
+    transition: width 3s;
+    grid-area: sd;
+
+}
+
+.animation {
+    width: 100px;
+    height: 200px;
+    text-align: center;
+    animation-duration: 5s;
+    animation-name: slidein;
+    color:black;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    grid-area: ft;
+}
+
+.boton:hover {
+    width: 700px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    grid-auto-rows: minmax(100px, auto);
+    grid-template-areas:
+        "hd hd hd hd   hd   hd   hd   hd   hd"
+        "sd main main main main main main main main"
+        "ft  ft  ft  ft   ft   ft   ft   ft   ft";
+}
+
+@keyframes slidein {
+    from {
+        background-color:white;
+        margin-left: 100%;
+        width: 300%;
+    }
+
+    to {
+        background-color:red;
+        margin-left: 0%;
+        width: 100%;
+    }
+}
+#resultado{
+  
+    background-color: black;
+    color: red;
+    text-align: center;
+
+}
+body{
+    background-color: black;
+}
